@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 10px;
+        }
+
+        .item{
+            background-color: rgb(31, 96, 236);
+            color: white;
+            padding: 15px ;
+            font-size: 30px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .container1{
+            display: grid;
+            grid-template-columns: 300px auto auto auto ;
+        }
+
+        .item1 {
+            background-color: white;
+            font-size: 40px;
+            margin:20px 0px 20px 0px;
+        }
+
+        #vb{
+            border-right: 2px solid black;
+            height: 50px;
+            margin: 30px;
+        }
+
+        .item2 {
+            background-color: white;
+            text-align: start;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+            grid-column-start: 2;
+            grid-column-end: 4;
+        }
+        .item3 {
+            background-color: white;
+            justify-content: end;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+        
+        .container2{
+            background-color: rgb(130, 163, 233);
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            height: 500px;
+        }
+
+        #item1{
+            background-color: rgb(48, 131, 48);
+            border-radius: 40px;
+            height: 250px;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-size: 200px;
+            color: white;
+            font-weight: 100;
+            transform: skewX(40deg) rotateZ(-9deg);
+            position: absolute;
+            width: 94%;
+        }
+
+        #item2{
+            background-color: rgb(31, 96, 236); ;
+            height: 110px;
+            width: 800px;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            font-size: 70px;
+            color: white;
+            bottom: 80px;
+            left: 650px;
+        }
+
+        #item3{
+            position: relative;
+            background-color: rgb(31, 96, 236); ;
+            width: 30%;
+            height: 400px;
+            left: 50px;
+           bottom: 40px;
+           color: white;
+           font-size: 17px;
+        }
+         
+        #item3 h3{
+            border-bottom: dotted white;            
+            padding: 10px;
+            margin:0px 100px 10px 100px;
+        }
+
+        .container3{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            margin-top: 70px;
+            height: 500px;
+            justify-content: center;
+            text-align: center;
+            align-items: center;
+            grid-gap: 20px;
+            padding: 10px;
+        }
+
+        .container3 h3{
+            border-bottom: dotted grey;
+            padding: 5px 0px 10px 0px;
+        }
+
+        #img-3{
+            width: 330px;
+            height: 100px;
+            background-color: rgb(71, 71, 71);
+            border: double white 5px;
+            color: white;
+            font-size: 50px;
+            margin: 20px;
+            margin-left: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .item1-3{
+            background-color: rgba(184, 182, 182, 0.8);
+            text-align: center;
+            padding: 20px ;
+            font-size: 20px;
+        }
+
+        .item1-3 a{
+            display: flex;
+            justify-content: end;
+        }
+
+        .hr{
+            border-bottom: dashed 5px;
+            margin-top: 100px;
+            color: gray;
+            padding: 10px;
+        }  
+
+        .container4{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            padding-top: 30px;
+            gap: 30px;
+        
+        }
+
+        #item4-1{
+            background-color: grey;
+            width: 400px;
+            height: 270px;
+            border:double white 5px;
+            font-size: 70px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #item4-2{
+            width: 100%;
+        }
+
+        #item4-2 h2{
+            color: rgb(66, 66, 66);
+            margin-bottom: 5px;
+        }
+
+        #item4-2 hr{
+            border: dashed grey 1px;
+            margin-bottom: 5px;
+        }
+
+        #item4-2 p{
+            font-size: 18px;
+            color: rgb(88, 88, 88);
+        }
+
+        #item4-2 a{
+            width: 100%;
+            display: grid;  
+            justify-content:end;
+            margin-top: 10px;
+            font-size: 20px;
+        }
+
+        .item4-3{       
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+       
+        #hr1{
+            border: dashed grey 1px;
+            margin-bottom: 15px;
+        }
+
+        .item4-3 a{
+            margin-top: 10px;
+        }
+
+        #container4-hr2{
+            margin-bottom: 20px;
+            width: 205%;
+            border: dashed grey 1px;
+        }
+
+        .container5{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            gap: 15px;
+            padding-right: 18px;
+        }
+
+        #container5-1{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 150px;
+            border: double white 5px;
+            color: white;
+            font-size: 30px;
+        }
+
+        .container6{
+            background-color:  rgb(31, 96, 236);;
+            height: 50px;
+            color: white;
+            display: grid;
+            align-items: center;
+            grid-template-columns: auto auto auto auto;
+            margin: 0px 20px 0px 20px;
+        }
+
+        #container6-1{
+            grid-column-start: 4;
+            grid-column-end: 4;
+            display: grid;
+            justify-content: end;
+        }
+    </style>
+    <title>Grid-homework</title>
+</head>
+<body>
+        <div class="container">
+            <button class="item">Home</button>
+            <button class="item">About</button>
+            <button class="item">Contact</button>
+            <button class="item">Company</button>
+            <button class="item">Services</button>
+        </div>
+        <div class="container1">
+            <div class="item1">TechCorporate<span id="vb"></span></div>
+            <div class="item2">Free PSD website Template</div>
+            <div class="item3">Tel:xxxx &nbsp&nbsp xxxxxxxxxx<br> Mail:info@domain.com</div>
+        </div>
+        <div class="container2">
+            <h1 id="item1">TECHNOLOGY</h1>
+            <h2 id="item2">Todays Technology >></h2>
+            <div id="item3">
+                <h3 >Lorem ipsum dolor sit amet</h3>
+                <p>Suspendisse potenti. Cras neque nunc, fringilla sit amet est in, tempus blandit diam. Proin consectetur laoreet augue in accumsan. Sed congue metus nec turpis hendrerit porttitor. Etiam non tincidunt justo. Aliquam eu viverra sapien. Ut urna elit, pulvinar ac nisl a, dictum eleifend eros.
+                    Phasellus tempor dolor id est accumsan, elementum efficitur sapien dapibus. Suspendisse nec luctus orci. Aliquam egestas porttitor odio, eu tincidunt nunc ullamcorper sit amet. Etiam sed felis hendrerit, mollis nisl at, tincidunt ligula. Nam porttitor fringilla augue finibus ultricies. Suspendisse tempor dui ut neque bibendum feugiat. Vivamus mollis, urna nec porttitor sodales, turpis lacus lobortis urna, at tincidunt augue arcu in libero. Etiam a dolor lacinia, iaculis felis ac, tempus neque.
+                </p>
+            </div>    
+        </div>
+        <div class="container3">
+            <div class="item1-3">    
+                <h3>Duis vestibulum turpis at feugiat rhoncus.</h3>
+                <div id="img-3"> 240 X 90px</div>
+                <p>In volutpat mi urna, eget iaculis libero tincidunt non. Donec aliquam dui quis elit fermentum consequat. Vivamus dapibus augue enim, sed suscipit tortor suscipit ac. Curabitur non massa quis elit faucibus iaculis at quis neque. Donec vestibulum arcu a hendrerit fringilla.
+                    Vivamus et diam eget nibh varius tincidunt. Integer quis metus venenatis, consequat tortor eu, dictum diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </p>
+                <a href="www.google.com">Read More >></a>
+            </div>
+            <div class="item1-3">    
+                <h3>Duis vestibulum turpis at feugiat rhoncus.</h3>
+                <div id="img-3"> 240 X 90px</div>
+                <p>In volutpat mi urna, eget iaculis libero tincidunt non. Donec aliquam dui quis elit fermentum consequat. Vivamus dapibus augue enim, sed suscipit tortor suscipit ac. Curabitur non massa quis elit faucibus iaculis at quis neque. Donec vestibulum arcu a hendrerit fringilla.
+                    Vivamus et diam eget nibh varius tincidunt. Integer quis metus venenatis, consequat tortor eu, dictum diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </p>
+                <a href="www.google.com">Read More >></a>
+            </div>
+            <div class="item1-3">    
+                <h3>Duis vestibulum turpis at feugiat rhoncus.</h3>
+                <div id="img-3"> 240 X 90px</div>
+                <p>In volutpat mi urna, eget iaculis libero tincidunt non. Donec aliquam dui quis elit fermentum consequat. Vivamus dapibus augue enim, sed suscipit tortor suscipit ac. Curabitur non massa quis elit faucibus iaculis at quis neque. Donec vestibulum arcu a hendrerit fringilla.
+                    Vivamus et diam eget nibh varius tincidunt. Integer quis metus venenatis, consequat tortor eu, dictum diam. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
+                </p>
+                <a href="www.google.com">Read More >></a>
+            </div>
+        </div>
+    <div class="hr"></div>
+    <div class="container4">
+        <div id="item4-1">200 X 160px</div>
+        <div id="item4-2">
+            <h2>Nunc vel maximus .</h2>
+            <hr>
+            <p>In posuere facilisis nisi quis gravida.Quisque in ligula a tellus molestie ultricies sit amet a enim.  Pellentesque tincidunt vulputate arcu, non consequat nisl ultrices non. Nulla enim quam, posuere maximus vestibulum et, scelerisque nec eros. Vivamus a pellentesque odio, quis iaculis mi. Aenean sodales quis metus id vestibulum. Nunc ut sem non dui consectetur tristique in quis arcu. Sed laoreet, sem in gravida malesuada, arcu risus aliquam nulla, eu sollicitudin arcu magna a turpis.</p>
+            <a href="www.google.com">Continue reading >></a>  
+        </div>
+        <div class="item4-3">
+            <h2>Categories</h2>
+            <hr id="hr1">
+            <a href="www.google.com">>> Link text goes here</a>
+           <hr>
+            <a href="www.google.com">>> Link text goes here</a>
+            <hr>
+            <a href="www.google.com">>> Link text goes here</a>
+            <hr>
+            <a href="www.google.com">>> Link text goes here</a>
+            <hr>
+            <a href="www.google.com">>> Link text goes here</a>
+            <hr>
+        </div>
+        <hr id="container4-hr2">
+    </div>
+    <div class="container5">
+        <div id="container5-1">174 x 100px</div>
+        <div id="container5-1">174 x 100px</div>
+        <div id="container5-1">174 x 100px</div>
+        <div id="container5-1">174 x 100px</div>
+        <div id="container5-1">174 x 100px</div>
+    </div>
+    <div class="container6">
+        <p>Copyright &copy; 2009 Domain Name - All Right Reserved</p>
+        <p id="container6-1">Template By Junior OS Teplates </p>
+    </div>
+</body>
+</html>
